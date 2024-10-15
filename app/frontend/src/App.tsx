@@ -63,24 +63,24 @@ function App() {
     };
 
     return (
-        <div className="flex min-h-screen flex-col bg-gray-100 text-gray-900">
+        <div className="flex min-h-screen flex-col bg-white text-gray-900">
             <div className="p-4 sm:absolute sm:left-4 sm:top-4">
-                <img src={logo} alt="Azure logo" className="h-16 w-16" />
+                {/* <img src={logo} alt="Azure logo" className="h-16 w-16" /> */}
             </div>
             <main className="flex flex-grow flex-col items-center justify-center">
                 <h1 className="mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
-                    Talk to your data
+                    Keskustele datasta
                 </h1>
                 <div className="mb-4 flex flex-col items-center justify-center">
                     <Button
                         onClick={onToggleListening}
                         className={`h-12 w-60 ${isRecording ? "bg-red-600 hover:bg-red-700" : "bg-purple-500 hover:bg-purple-600"}`}
-                        aria-label={isRecording ? "Stop recording" : "Start recording"}
+                        aria-label={isRecording ? "Lopeta nauhoitus" : "Aloita nauhoitus"}
                     >
                         {isRecording ? (
                             <>
                                 <MicOff className="mr-2 h-4 w-4" />
-                                Stop conversation
+                                Pysäytä keskustelu
                             </>
                         ) : (
                             <>
@@ -94,7 +94,7 @@ function App() {
             </main>
 
             <footer className="py-4 text-center">
-                <p>Built with Azure AI Search + Azure OpenAI</p>
+                <p>Azure AI Search + Azure OpenAI</p>
             </footer>
 
             <GroundingFileView groundingFile={selectedFile} onClosed={() => setSelectedFile(null)} />
