@@ -37,8 +37,8 @@ export function GroundingFiles({ files, onSelected }: Properties) {
     return (
         <Card className="m-4 max-w-full md:max-w-md lg:min-w-96 lg:max-w-2xl">
             <CardHeader>
-                <CardTitle className="text-xl">Grounding files</CardTitle>
-                <CardDescription>Files used to ground the answers.</CardDescription>
+                <CardTitle className="text-xl">Kontekstuaaliset tiedostot</CardTitle>
+                <CardDescription>Tiedostot, joita käytetään vastausten perustana.</CardDescription>
             </CardHeader>
             <CardContent>
                 <AnimatePresence>
