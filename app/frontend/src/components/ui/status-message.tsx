@@ -6,7 +6,7 @@ type Properties = {
 
 export default function StatusMessage({ isRecording }: Properties) {
     if (!isRecording) {
-        return <p className="text mb-4 mt-6">Ask anything about Contoso employee benefits</p>;
+        return <p className="text mb-4 mt-6">Kysy 100% Quality menetelmistä</p>;
     }
 
     return (
@@ -25,7 +25,7 @@ export default function StatusMessage({ isRecording }: Properties) {
                     ))}
                 </div>
             </div>
-            <p className="text mb-4 ml-2 mt-6">Conversation in progress</p>
+            <p className="text mb-4 ml-2 mt-6">Keskustelu käynnissä</p>
         </div>
     );
 }
