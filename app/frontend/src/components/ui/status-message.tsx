@@ -6,7 +6,7 @@ type Properties = {
 
 export default function StatusMessage({ isRecording }: Properties) {
     if (!isRecording) {
-        return <p className="text mb-4 mt-6">Kysy 100% Quality menetelmistä</p>;
+        return <p className="text mb-4 mt-6">Kysy 100% Quality -laatumallista.</p>;
     }
 
     return (
