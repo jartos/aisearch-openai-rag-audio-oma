@@ -6,7 +6,8 @@ type Properties = {
 
 export default function StatusMessage({ isRecording }: Properties) {
     if (!isRecording) {
-        return <p className="text mb-4 mt-6">Kysy tietoja Innofactorin puolivuosikatsauksesta esim. liikevaihto, tilauskanta, omavaraisuusaste </p>;
+        return <p class="text mb-4 mt-6" style="text-align: center; padding: 20px;">
+        Voit kysyä tietoja Innofactorin osavuosikatsauksen tunnusluvuista, kuten liikevaihdosta, tilauskannasta tai omavaraisuusasteesta.</p>;
     }
 
     return (

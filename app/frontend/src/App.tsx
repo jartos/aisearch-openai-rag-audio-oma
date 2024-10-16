@@ -69,7 +69,7 @@ function App() {
             </div>
             <main className="flex flex-grow flex-col items-center justify-center">
                 <h1 className="mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
-                    Keskustele datasta
+                    Kysy datasta
                 </h1>
                 <div className="mb-4 flex flex-col items-center justify-center">
                     <Button
@@ -93,9 +93,9 @@ function App() {
                 <GroundingFiles files={groundingFiles} onSelected={setSelectedFile} />
             </main>
 
-            <footer className="py-4 text-center">
+            {/* <footer className="py-4 text-center">
                 <p>Azure AI Search + Azure OpenAI</p>
-            </footer>
+            </footer> */}
 
             <GroundingFileView groundingFile={selectedFile} onClosed={() => setSelectedFile(null)} />
         </div>
